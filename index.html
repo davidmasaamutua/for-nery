@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Nery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="petals-container"></div>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-red-rose-petals-falling-2402-large.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="music-control" onclick="toggleMusic()">
+        <svg id="music-heart" class="music-heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span id="music-text">Play Music</span>
+    </div>
+
+    <audio id="romantic-audio" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <div class="floating-photo" style="top: 20%; left: 10%;">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=100" alt="Rose">
+    </div>
+    <div class="floating-photo" style="top: 60%; right: 15%;">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=100" alt="Tulip">
+    </div>
+    <div class="floating-photo" style="top: 40%; left: 80%;">
+        <img src="https://images.unsplash.com/photo-1464822759844-d150f39b8b3c?w=100" alt="Sunflower">
+    </div>
+
+    <main class="wrapper">
+        <div class="glass-card">
+            <h1 class="glow-text">Nery</h1>
+            <p class="subtitle">My Everything</p>
+            
+            <div class="counter-container">
+                <p class="counter-label">Days spent loving you:</p>
+                <div id="love-counter">
+                    <span id="days">00</span>d : <span id="hours">00</span>h : <span id="mins">00</span>m : <span id="secs">00</span>s
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            
+            <p class="main-caption">"In a garden full of flowers, I’d still pick you."</p>
+            
+            <button class="primary-btn" onclick="revealNote()">Open My Letter</button>
+
+            <div id="secret-note" class="hidden-note">
+                <p>Nery, you are the most beautiful person I know. Every second with you feels like a dream I never want to wake up from. 🌹</p>
+                <p>Just like these flowers, your beauty blooms every day. <a href="flower.html" style="color: var(--gold); text-decoration: none;">View Flower Gallery</a></p>
+                <span class="signature">Forever Yours, [David Mutuaz]</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
